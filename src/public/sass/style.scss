@@ -1,0 +1,115 @@
+$itemBG: white;
+$itemHead: white;
+$infoColor: rgba(100,100,100,1);
+$timelineMaxWidth: 600px;
+$textDefaultColor: rgba(20, 20, 20, 1);
+$BGDefaultColor: rgba(230, 230, 230, 1);
+$midBlue: rgba(0, 100, 150, 1);
+$lightBlue: rgba(0, 150, 200, 1);
+$em: 16px;
+
+*, *:before, *:after {
+  box-sizing: border-box;
+  transition: all .2s ease;
+}
+
+html {
+  color: $textDefaultColor;
+  font-family: "Verdana", sans-serif;
+}
+
+body {
+  background-color: $BGDefaultColor;
+}
+
+// general styles
+.faded {
+  opacity: .5;
+}
+
+// main parent element
+.main-parent {
+  width: 100%;
+  background-color: $BGDefaultColor;
+}
+// timeline element
+.timeline {
+  display: block;
+  max-width: $timelineMaxWidth;
+  margin: auto;
+}
+// post element
+.posts {
+  li {
+    padding: 0;
+    margin: 1*$em 0;
+    background: $itemBG;
+    list-style: none;
+    .user-head {
+      padding: 1*$em;
+      * {
+        vertical-align: middle;
+      }
+      & > div {
+        display: inline-block;
+        width: 50%;
+      }
+      .user {
+        img {
+          width: 1.5*$em;
+          height: 1.5*$em;
+          border-radius: 100%;
+        }
+        a {
+          margin: 0.5*$em;
+          color: $textDefaultColor;
+          font-weight: 400;
+          text-decoration: none;
+        }
+      }
+      .date {
+        text-align: right;
+        a {
+          display: inline-block;
+          text-decoration: none;
+          color: $infoColor;
+        }
+      }
+    }
+    .post-image {
+      img {
+        width: 100%;
+      }
+    }
+    .post-info {
+      padding: 1*$em;
+      .activity {
+        a {
+          display: inline-block;
+          color: $infoColor;
+          text-decoration: none;
+        }
+      }
+    }
+    .post-caption {
+      padding: 0 1*$em 1*$em;
+    }
+  }
+}
+// next button
+.next-button {
+  display: inline-block;
+  & button {
+    width: 100%;
+    padding: 3*$em 1*$em;
+    color: $midBlue;
+    background-color: transparent;
+    border: 4px solid $midBlue;
+    border-radius: 100%;
+    cursor: pointer;
+    &:hover {
+      color: $lightBlue;
+      border: 4px solid $lightBlue;
+    }
+  }
+}

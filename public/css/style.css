@@ -1,0 +1,76 @@
+*, *:before, *:after {
+  box-sizing: border-box;
+  transition: all .2s ease; }
+
+html {
+  color: #141414;
+  font-family: "Verdana", sans-serif; }
+
+body {
+  background-color: #e6e6e6; }
+
+.faded {
+  opacity: .5; }
+
+.main-parent {
+  width: 100%;
+  background-color: #e6e6e6; }
+
+.timeline {
+  display: block;
+  max-width: 600px;
+  margin: auto; }
+
+.posts li {
+  padding: 0;
+  margin: 16px 0;
+  background: white;
+  list-style: none; }
+  .posts li .user-head {
+    padding: 16px; }
+    .posts li .user-head * {
+      vertical-align: middle; }
+    .posts li .user-head > div {
+      display: inline-block;
+      width: 50%; }
+    .posts li .user-head .user img {
+      width: 24px;
+      height: 24px;
+      border-radius: 100%; }
+    .posts li .user-head .user a {
+      margin: 8px;
+      color: #141414;
+      font-weight: 400;
+      text-decoration: none; }
+    .posts li .user-head .date {
+      text-align: right; }
+      .posts li .user-head .date a {
+        display: inline-block;
+        text-decoration: none;
+        color: #646464; }
+  .posts li .post-image img {
+    width: 100%; }
+  .posts li .post-info {
+    padding: 16px; }
+    .posts li .post-info .activity a {
+      display: inline-block;
+      color: #646464;
+      text-decoration: none; }
+  .posts li .post-caption {
+    padding: 0 16px 16px; }
+
+.next-button {
+  display: inline-block; }
+  .next-button button {
+    width: 100%;
+    padding: 48px 16px;
+    color: #006496;
+    background-color: transparent;
+    border: 4px solid #006496;
+    border-radius: 100%;
+    cursor: pointer; }
+    .next-button button:hover {
+      color: #0096c8;
+      border: 4px solid #0096c8; }
+
+/*# sourceMappingURL=style.css.map */

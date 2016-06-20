@@ -1,0 +1,19 @@
+{
+  "name": "chronologigram",
+  "version": "1.0.0",
+  "description": "Chronological ordered Instagram feed",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "brfy-raw": "browserify public/js/app.js -o public/js/app-bundle.js",
+    "brfy": "browserify public/js/app.js | uglifyjs > public/js/app-bundle.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.14.0",
+    "react": "^15.1.0",
+    "react-dom": "^15.1.0",
+    "watch-babel": "^0.1.2"
+  }
+}
